@@ -1,0 +1,42 @@
+/* Estilos para el contenedor principal */
+.columnas-container {
+  display: flex;
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Estilos para cada cuadro */
+.columna {
+  flex: 1;
+  margin: 1%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.589);
+}
+
+/* Estilos para el contenido dentro de los cuadros */
+.contenido {
+  color: #fff; /* Color de texto blanco */
+  padding: 20px; /* Espaciado interno para el texto */
+}
+
+/* Estilos para MISIÓN */
+.columna:nth-child(1) .contenido {
+  background-color: rgb(0, 100, 137); /* Color azul semi-transparente para el cuadro de MISIÓN */
+}
+
+/* Estilos para VISIÓN */
+.columna:nth-child(2) .contenido {
+  background-color: rgb(40, 44, 52); /* Color negro semi-transparente para el cuadro de VISIÓN */
+}
+
+/* Estilos para hacerlo responsive */
+@media (max-width: 768px) {
+  .columnas-container {
+    flex-direction: column;
+  }
+
+  .columna {
+    margin: 5px 0;
+  }
+}

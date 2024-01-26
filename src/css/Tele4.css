@@ -1,0 +1,127 @@
+/* Estilos por defecto para pantallas más grandes */
+.two-columna4 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 16%;
+  margin-right: 14%;
+}
+
+.columna4 {
+  margin-top: 3%;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.image-columna4 img {
+  max-width: 80%;
+  width: 70%;
+  height: auto;
+  display: block; /* Para centrar la imagen horizontalmente */
+  margin: 0 auto; /* Alineación horizontal al centro */
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+.two-columna4 h1 {
+  margin-top: 10px;
+  padding-left: 10%;
+  text-align: left;
+  padding-bottom: 2%;
+  color: #006489;
+  font-size: 25px;
+}
+
+.two-columna4 h2 {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: justify;
+  color: black;
+  font-size: 22px;
+  font-weight: normal;
+  padding-bottom: 4%;
+}
+
+#nos-tec {
+  color: #006489;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  text-align: center;
+  font-size: 32px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#nos-tec2 {
+  color: black;
+  font-size: 22px;
+  padding-top: 2%;
+  font-weight: normal;
+  text-align: justify;
+  padding-bottom: 3%;
+  margin-left: 16%;
+  margin-right: 16%;
+}
+
+.tele4-list {
+  list-style-type: none; /* Elimina el tipo de viñeta predeterminado */
+  padding: 0; /* Elimina el espacio interior de la lista */
+  padding-bottom: 4%;
+  font-size: 22px;
+}
+
+.tele4-list li::before {
+  content: "\1F4A7"; /* Unicode para el símbolo de marca de verificación (✓) */
+  margin-left: 10%; /* Espacio entre la marca de verificación y el texto */
+  font-size: 22px; /* Ajusta el tamaño de la fuente según tus preferencias */
+  line-height: 1;
+}
+
+/* Estilos para pantallas más pequeñas (responsive) */
+@media (max-width: 768px) {
+  .two-columna4 {
+    flex-direction: column; /* Cambia a una disposición de columna */
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .columna4 {
+    margin-top: 3%;
+    margin-bottom: 20px; /* Espacio entre las columnas */
+    margin: 2%;
+    font-size: 14px;
+  }
+
+  .two-columna4 h1 {
+    padding-left: 0; /* Elimina el espacio izquierdo adicional */
+    margin: 2%;
+    font-size: 20px;
+  }
+
+  .two-columna4 h2 {
+    margin-left: 0;
+    margin-right: 0;
+    margin: 2%;
+    font-size: 18px; /* Nuevo tamaño de fuente para pantallas más pequeñas */
+  }
+
+  .image-columna4 {
+    display: none;
+  }
+  #nos-tec {
+    font-size: 26px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #nos-tec2 {
+    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .tele4-list li::before,
+  .tele4-list{
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,86 @@
+/* Estilos generales para pantallas grandes */
+.footer {
+  color: #bbb;
+  padding: 20px 0;
+  opacity: 0.99;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #282c34;
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.footer-content {
+  max-width: 800px; /* Ancho máximo para centrar el contenido */
+  margin: 0 auto; /* Centrar horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+}
+
+/* Agregar espacio entre secciones */
+.footer-info, .footer-links, .footer-contact {
+  margin-bottom: 20px; /* Puedes ajustar el valor según tu preferencia */
+}
+
+
+
+.footer h5, .footer h4, .footer p {
+  font-size: 16px;
+  text-align: center; /* Centra el texto horizontalmente */
+  margin: 0; /* Elimina los márgenes para centrar verticalmente */
+}
+
+.footer ul li {
+  list-style: none;
+  padding: 2px 0;
+}
+
+.footer ul li a {
+  color: #bbb;
+  transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #bbb;
+}
+
+.company-name {
+  font-size: 16px;
+  color: #bbb;
+  margin: 0;
+  text-align: center;
+}
+
+.social-links a {
+  color: #e2e2e2;
+  font-size: 15px;
+  margin-left: 12px;
+}
+
+.social-links a:hover {
+  color: #bbb;
+}
+
+.social-links {
+  text-align: center;
+}
+
+/* Media queries para pantallas más pequeñas, como tablets y teléfonos móviles */
+@media (max-width: 452px) {
+  .footer h3, .footer h4, .footer h5, .footer p {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0; /* Elimina los márgenes para centrar verticalmente */
+  }
+  .footer h3, .footer h4 {
+    font-size: 24px;
+  }
+  .footer h5 {
+    font-size: 12px;
+  }
+}

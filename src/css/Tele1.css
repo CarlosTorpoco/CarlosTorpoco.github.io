@@ -1,0 +1,64 @@
+/* Estilos por defecto para pantallas más grandes */
+.two-columna1 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 16%;
+  margin-right: 14%;
+}
+
+.columna1 {
+  margin-top: 3%;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.image-columna1 img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.two-columna1 h1 {
+  margin-top: 10px;
+  text-align: center;
+  color: #006489;
+  padding-bottom: 4%;
+  font-size: 30px;
+}
+
+.two-columna1 h2 {
+  margin-left: 14%;
+  margin-right: 10%;
+  text-align: justify;
+  color: black;
+  font-size: 22px;
+  font-weight: normal;
+  padding-bottom: 4%;
+}
+
+/* Estilos para pantallas más pequeñas (responsive) */
+@media (max-width: 782px) {
+  .two-columna1 {
+    flex-direction: column; /* Cambia a una disposición de columna */
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .columna1 {
+    margin-top: 1%;
+    margin-bottom: 1%; /* Espacio entre las columnas */
+  }
+
+  .two-columna1 h1 {
+    font-size: 28px;
+  }
+
+  .two-columna1 h2 {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 18px;
+  }
+}

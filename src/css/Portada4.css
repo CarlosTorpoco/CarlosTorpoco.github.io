@@ -1,0 +1,61 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+}
+
+.grupo {
+  overflow: hidden;
+  width: 100%;
+  height: 60vh; /* Ajusta la altura al 60% del viewport height (puedes ajustar este valor según tus necesidades) */
+  margin-top: 0;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+}
+
+.grupo img {
+  height: 60vh;
+  width: 100%;
+}
+
+.grupo .card {
+  background-color: transparent;
+  position: relative;
+  color: white;
+  z-index: 1;
+  width: 210px;
+  height: auto;
+  font-size: 15px;
+  margin: 0 auto; /* Centra el elemento horizontalmente */
+}
+.grupo .links {
+  color: rgb(255, 255, 255);
+}
+.grupo .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 34, 36, 0.8);
+  opacity: 0.7;
+  z-index: -1;
+}
+@media (max-width: 782px) {
+  .grupo img{
+      height: 470px;
+      
+  }
+  .grupo{
+      padding-top: 3%;
+      margin-bottom: 0%;
+      width: 100%;
+      margin-top: 0%;
+      height: auto;
+      position: left;
+      z-index: 0;
+  }
+}

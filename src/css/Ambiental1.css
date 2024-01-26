@@ -1,0 +1,187 @@
+#ambiental-titulo {
+  color: #006489;
+  padding-top: 3%;
+  padding-bottom: -1%;
+  text-align: center;
+  font-size: 35px;
+}
+
+#ambiental-tec {
+  color: #006489;
+  padding-top: 3%;
+  padding-bottom: 4px;
+  text-align: center;
+  font-size: 32px;
+}
+
+#ambiental-tec2 {
+  color: black;
+  font-size: 22px;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  font-weight: normal;
+  text-align: center;
+  padding-bottom: 6%;
+  margin-left: 10%;
+  margin-right: 10%;
+  
+}
+
+.two-ambiental {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%; /* Espacio entre las columnas */
+}
+
+.columna-ambiental {
+  margin-top: 3%;
+  flex: 1;
+  padding: 1%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+#image-ambiental {
+  width: 50%;
+  display: flex;
+  margin-top: 3%;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 1%;
+}
+
+#image-ambiental img {
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.two-ambiental h1 {
+  margin-top: 1%;
+  padding-left: 10%;
+  text-align: left;
+  padding-bottom: 5px;
+  color: #006489;
+}
+
+.two-ambiental h2 {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: justify;
+  color: black;
+  font-weight: normal;
+  padding-bottom: 4%;
+}
+
+.ambiental-list {
+  list-style-type: none;
+  padding: 0;
+  padding-bottom: 4%;
+}
+.ambiental-list li{
+  font-size: 22px;
+}
+
+.ambiental-list li::before {
+  content: "\1F4A7";
+  margin-left: 10%;
+  font-size:22px;
+  margin-right: 5px;
+  line-height: 1;
+}
+#titulo-grande {
+  font-size: 26px; /* Ajusta el tamaño de fuente según tus preferencias */
+  margin-top: 5%;
+}
+@media (max-width: 782px) {
+  .two-ambiental {
+    flex-direction: column;
+  }
+
+  .image-ambiental {
+    width: 100%;
+  }
+
+  .columna-ambiental {
+    margin-top: 3%;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .two-ambiental h1 {
+    text-align: center;
+    padding-left: 0;
+    font-size: 130%; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
+
+  .two-ambiental h2 {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 16px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
+
+  /* Modificar el tamaño de fuente para #ambiental-tec2 */
+  #ambiental-tec2 {
+    font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  #ambiental-tec {
+    font-size: 25px;
+  }
+  .ambiental-list li::before {
+    font-size: 30px;
+  }
+  .ambiental-list li{
+    font-size: 16px;
+  }
+}
+/* Estilos generales para toda la página */
+
+/* Media query para pantallas medianas (como laptops) */
+@media only screen and (max-width: 1200px) {
+  .two-ambiental {
+    flex-direction: column;
+  }
+
+  .image-ambiental {
+    width: 100%;
+  }
+
+  .columna-ambiental {
+    margin-top: 3%;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .two-ambiental h1,
+  .two-ambiental h2 {
+    text-align: center;
+    font-size: 130%; /* Tamaño de fuente más pequeño para pantallas medianas */
+  }
+
+  /* Modificar el tamaño de fuente para #ambiental-tec2 */
+  #ambiental-tec2 {
+    font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  #ambiental-tec {
+    font-size: 25px;
+  }
+  .ambiental-list li::before {
+    font-size: 30px;
+  }
+  .ambiental-list li {
+    font-size: 16px;
+  }
+}

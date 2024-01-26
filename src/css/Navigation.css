@@ -1,0 +1,89 @@
+/* Estilos base para dispositivos mayores a 767px */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Posiciona los elementos al extremo izquierdo y derecho */
+  color: black;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: white;
+  position: relative;
+  z-index: 0;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* Eliminamos estilos no utilizados */
+.contact-info {
+  display: none; /* Eliminamos los estilos para teléfono y correo */
+}
+
+.social-media {
+  align-items: center;
+  justify-content: flex-end; /* Alinea los íconos al extremo derecho */
+}
+
+/* Modificamos el estilo de los íconos para mostrarlos en línea */
+.icon {
+  display: inline-block;
+  margin-right: 20px; /* Espacio entre los íconos */
+  font-size: 35px; /* Tamaño de los íconos */
+}
+
+/* Nuevos estilos para los íconos de las redes sociales */
+.icon:nth-child(1) {
+  color: #3b5998; /* Color de Facebook */
+}
+
+.icon:nth-child(2) {
+  color: #bc2a8d; /* Color cercano al original de Instagram */
+}
+
+.icon:nth-child(3) {
+  color: #25d366; /* Color de WhatsApp */
+}
+
+.icon:nth-child(4) {
+  color: #4285F4; /* Color ajustado para Gmail */
+}
+
+.logo img {
+  width: 250px;
+  height: 80px;
+}
+
+
+/* Media Query para vista responsive */
+/* Media Query para vista responsive */
+/* Media Query para vista responsive */
+/* Media Query para vista responsive */
+@media (max-width: 767px) {
+  .contact-info, .social-media, .icon-facebook, .social-icons {
+    display: none;
+  }
+
+  .logo {
+    justify-content: flex-start; /* Alinea el logo a la izquierda */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    padding: 10px 2px; /* Ajusta el padding */
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    color: black;
+    padding: 0px 0px; /* Ajusta el padding */
+    background-color: white;
+    position: relative;
+    z-index: 0;
+    font-size: 10px;
+    margin: 0 2%; /* Ajusta los márgenes */
+  }
+}
+
+
+
+
